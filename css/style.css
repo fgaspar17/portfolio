@@ -1,8 +1,44 @@
 body {
     background-color: #121212;
     color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+code, pre {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.95rem;
 }
 
 .linkedin-icon {
-    fill: #0077b5;
+    fill: #0a66c2;
+}
+
+.cv-icon {
+    fill: #f5403d;
+}
+
+.container-timeline {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #aca4a4;
+}
+
+.timeline-title {
+  position: relative;
+  padding-left: 20px;
+}
+
+.timeline-title::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0.3em;
+  width: 10px;
+  height: 10px;
+  background-color: #148dc5; /* choose your dot color */
+  border-radius: 50%;
+}
+
+.timeline-content {
+    margin-left: 20px;
 }
