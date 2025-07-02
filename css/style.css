@@ -42,3 +42,41 @@ code, pre {
 .timeline-content {
     margin-left: 20px;
 }
+
+.container-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 10px;
+    min-width: 600px;
+    max-width: 1000px;
+    max-height: 300px;
+}
+
+.project-card-info {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.fixed-paragraph {
+    flex-shrink: 0;
+}
+
+.shrinkable-paragraph {
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}

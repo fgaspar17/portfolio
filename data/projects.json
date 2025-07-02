@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "title": "CompressionApp",
+            "description": "A file compression and decompression utility built with .NET 9, leveraging Blazor Hybrid and .NET MAUI. It supports GZip and ZIP formats and provides a responsive user interface for both desktop and mobile platforms.",
+            "technologies": ["HTML", "CSS", "Blazor Hybrid", ".NET 9", "C#", "Git"],
+            "url": "https://github.com/fgaspar17/compression-app",
+            "image": "img/compression-app.png"
+        },
+        {
+            "title": "ExchangeApp",
+            "description": "A currency exchange application built with .NET 9 and Blazor Server. It also includes a reusable .NET library that fetches real-time currency exchange data. The project leverages modern .NET features like HttpClientFactory, Polly for resilience, MemoryCache for caching, and Serilog for structured logging.",
+            "technologies": ["HTML", "CSS", "Blazor", ".NET 9", "C#", "Git"],
+            "url": "https://github.com/fgaspar17/ExchangeApp",
+            "image": "img/exchange-app.png"
+        },
+        {
+            "title": "FtpApi",
+            "description": "A .NET 9 Web API for securely uploading, downloading, and deleting files via an FTP server. It leverages modern .NET features like Minimal APIs, JWT authentication, and integration with SQLite, FluentValidation, and Serilog. The project is fully containerized with Docker and demonstrates robust practices in error handling, testing, and file management.",
+            "technologies": ["HTML", "CSS", ".NET 9", "Git", "C#", "Docker", "SQLite"],
+            "url": "https://github.com/fgaspar17/FtpApi",
+            "image": "img/ftp-api.png"
+        }
+    ]
+}
