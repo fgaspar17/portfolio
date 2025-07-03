@@ -2,11 +2,11 @@ body {
     background-color: #121212;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
-}
-
-code, pre {
-    font-family: 'Fira Code', monospace;
-    font-size: 0.95rem;
+    display:flex; 
+    flex-direction:column;
+    min-height:100vh;
+    align-items: center;
+    min-width: 320px;
 }
 
 .linkedin-icon {
@@ -35,7 +35,7 @@ code, pre {
   top: 0.3em;
   width: 10px;
   height: 10px;
-  background-color: #148dc5; /* choose your dot color */
+  background-color: #148dc5;
   border-radius: 50%;
 }
 
@@ -46,7 +46,6 @@ code, pre {
 .container-projects {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
 }
 
@@ -54,12 +53,13 @@ code, pre {
     border: 1px solid #ddd;
     border-radius: 12px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow: hidden;
     padding: 10px;
-    min-width: 600px;
+    min-width: 300px;
     max-width: 1000px;
-    max-height: 300px;
+    max-height: 600px;
+    align-items: center;
 }
 
 .project-card-info {
@@ -74,9 +74,15 @@ code, pre {
 
 .shrinkable-paragraph {
     display: -webkit-box;
-    line-clamp: 3;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     transition: max-height 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    flex-direction: row;
+    max-height: 300px;
+  }
 }

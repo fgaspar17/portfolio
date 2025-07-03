@@ -54,11 +54,11 @@ function createProjectCard(project) {
 }
 
 function renderProjects(projects) {
-    const projectsSection = document.querySelector("#projects"); // ensure this ID exists
+    const projectsContainer = document.querySelector("#projects"); // ensure this ID exists
 
     projects.forEach(project => {
         const article = document.createElement("article");
         article.appendChild(createProjectCard(project));
-        projectsSection.appendChild(article);
+        projectsContainer.appendChild(article);
     });
 }
