@@ -1,12 +1,42 @@
 body {
-    background-color: #121212;
+    background-color: #272626;
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    font-family: sans-serif;
     display:flex; 
     flex-direction:column;
     min-height:100vh;
     align-items: center;
     min-width: 320px;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 2rem);
+}
+
+h3 {
+    font-size: clamp(1.2rem, 4vw, 1.2rem);
+}
+
+.container-about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.name{
+    margin-block-end: unset;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }
 
 .linkedin-icon {
@@ -81,8 +111,11 @@ body {
 }
 
 @media (min-width: 768px) {
-  .project-card {
-    flex-direction: row;
-    max-height: 300px;
-  }
+    .project-card {
+        flex-direction: row;
+        max-height: 300px;
+    }
+  .container-about-me {
+        flex-direction: row;
+    }
 }
